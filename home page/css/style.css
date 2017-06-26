@@ -795,7 +795,7 @@ header.smaller nav a {
 	background: white;
 }
 .middlemiddle-cont {
-	padding: 4% 0 10%;
+	padding: 4% 0 1%;
 }
 .middlemiddle-cont h2{
 	font-size: 1.7em;
@@ -885,8 +885,14 @@ header.smaller nav a {
 	background: white;
 }
 .fourth-cont {
-	padding: 4% 0 10%;
+	width: 100%;
 }
+
+
+.fourth-cont img{
+	width: 100%;
+}
+
 .fourth-cont h2{
 	font-size: 1.7em;
 	color: black;
@@ -954,6 +960,12 @@ header.smaller nav a {
 
 
 
+
+.pasttopics{
+	font-family: "Poppins", sans-serif;
+	font-weight: bolder;
+	font-size: 6em;
+}
 
 
 
