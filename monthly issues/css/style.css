@@ -751,7 +751,7 @@ header.smaller nav a {
 	text-align: left;
 }
 .top-cont p{
-	font-size: 0.8755em;
+	font-size:1em;
 	color: black;
 	text-align: left;
 	padding-top: 1em;
@@ -908,7 +908,9 @@ header.smaller nav a {
 
 
 
-
+.oppressed{
+	text-align: center !important;
+}
 
 
 
@@ -1193,7 +1195,22 @@ header.smaller nav a {
 
 }
 
+.footnote{
+	font-size: 1vw !important;
 
+}
+
+.videotext{
+	text-align: center !important;
+	font-size: 1.2vw !important;
+}
+
+
+
+sup {
+
+    font-size: smaller;
+}
 
 /*-- END OF HEADER DESIGN --*/
 
