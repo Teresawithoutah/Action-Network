@@ -22,12 +22,9 @@ table{border-collapse:collapse;border-spacing:0;}
 
 
 
-/* LINK COLOR */
-a{
-	color: #28cac8;
-}
 
 
+a{text-decoration:none;}
 .txt-rt{text-align:right;}/* text align right */
 .txt-lt{text-align:left;}/* text align left */
 .txt-center{text-align:center;}/* text align center */
@@ -42,7 +39,6 @@ a{
 nav.vertical ul li{	display:block;}/* vertical menu */
 nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
 img{max-width:100%;}
-
 /*end reset*/
 
 html,body{
@@ -742,7 +738,7 @@ header.smaller nav a {
 	background:#fde545;
 }
 .top-cont {
-	padding: 3% 0 4%;
+	padding: 4% 0 4%;
 }
 .top-cont h2{
 	font-size: 1.7em;
@@ -751,7 +747,7 @@ header.smaller nav a {
 	text-align: left;
 }
 .top-cont p{
-	font-size:1em;
+	font-size: 0.8755em;
 	color: black;
 	text-align: left;
 	padding-top: 1em;
@@ -893,24 +889,13 @@ header.smaller nav a {
 	font-family: "Poppins", sans-serif;
 	font-weight: bolder;
 	font-size: 4em;
-	color : #28cac8;
-}
-
-
-
-.themetitle2{
-	font-family: "Poppins", sans-serif;
-	font-weight: bolder;
-	font-size: 2.2em;
-	color : #28cac8;
 }
 
 
 
 
-.oppressed{
-	text-align: center !important;
-}
+
+
 
 
 
@@ -1175,9 +1160,6 @@ header.smaller nav a {
    top: 50%;
    left: 50%;
    transform: translateX(-50%) translateY(-50%);
-	 font-size: 5vw;
-
-
 
 }
 
@@ -1191,28 +1173,13 @@ header.smaller nav a {
 }
 
 .headertext{
-	font-size: 90px;
+	font-size: 150px;
 	font-family: "Poppins", sans-serif;
 	font-weight: bolder;
 
 }
 
-.footnote{
-	font-size: 1vw !important;
 
-}
-
-.videotext{
-	text-align: center !important;
-	font-size: 1.2vw !important;
-}
-
-
-
-sup {
-
-    font-size: smaller;
-}
 
 /*-- END OF HEADER DESIGN --*/
 

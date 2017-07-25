@@ -1,4 +1,52 @@
- /*
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<!-- TITLE OF TAB -->
+<title>Action Network</title>
+<!-- ICON OF TAB -->
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/3dbutton/css/style.css" rel ="stylesheet" type ="text/css" media="all"/>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- start slider -->
+	<link href="css/camera.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="js/jquery.min.js"></script>
+    <script type='text/javascript' src="js/jquery.mobile.customized.min.js"></script>
+    <script type='text/javascript' src="js/jquery.easing.1.3.js"></script>
+    <script type='text/javascript' src="js/camera.min.js"></script>
+    <script type='text/javascript' src="/js/stfheaderbar.js"></script>
+
+
+
+
+    <script>
+		jQuery(function(){
+
+			jQuery('#camera_wrap_2').camera({
+
+				loader: 'bar',
+				pagination: false,
+				thumbnails: true
+			});
+		});
+
+
+
+	</script>
+
+
+
+
+
+
+
+
+  <style>
+     /*
 Author: W3layout
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
@@ -22,12 +70,9 @@ table{border-collapse:collapse;border-spacing:0;}
 
 
 
-/* LINK COLOR */
-a{
-	color: #28cac8;
-}
 
 
+a{text-decoration:none;}
 .txt-rt{text-align:right;}/* text align right */
 .txt-lt{text-align:left;}/* text align left */
 .txt-center{text-align:center;}/* text align center */
@@ -42,13 +87,12 @@ a{
 nav.vertical ul li{	display:block;}/* vertical menu */
 nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
 img{max-width:100%;}
-
 /*end reset*/
 
 html,body{
 	font-family: "Poppins", sans-serif;
 	font-size:100%;
-	background-color: #0b3059;
+	background-color: black;
 	margin:0;
 	padding: 0;
 	overflow-x:hidden;
@@ -733,7 +777,7 @@ header.smaller nav a {
 }
 /*THIRD SECTION*/
 
-.top-bg1 {
+/*.top-bg1 {
 	background: #fff;
 	border-top: 1px solid #eee;
 	margin-top: 3%;
@@ -741,9 +785,19 @@ header.smaller nav a {
 .top-bg{
 	background:#fde545;
 }
+*/
+
+
+
+
+
 .top-cont {
-	padding: 3% 0 4%;
+	padding: 4% 0 4%;
+	background: white;
 }
+
+
+
 .top-cont h2{
 	font-size: 1.7em;
 	color: #747474;
@@ -751,7 +805,7 @@ header.smaller nav a {
 	text-align: left;
 }
 .top-cont p{
-	font-size:1em;
+	font-size: 0.8755em;
 	color: black;
 	text-align: left;
 	padding-top: 1em;
@@ -778,12 +832,15 @@ header.smaller nav a {
 	color:#E44A4A;
 }
 
+
+
+
 /*start-grid middlemiddle*/
 .middlemiddle-bg{
 	background: white;
 }
 .middlemiddle-cont {
-	padding: 4% 0 10%;
+	padding: 4% 0 1%;
 }
 .middlemiddle-cont h2{
 	font-size: 1.7em;
@@ -822,6 +879,50 @@ header.smaller nav a {
 
 
 
+
+/*start-grid middlemiddle*/
+.newmiddle-bg{
+	background: white;
+}
+.newmiddle-cont {
+	padding: 0 12.5%;
+}
+.newmiddle-cont h2{
+	font-size: 1.7em;
+	color: black;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.41);
+	text-align: left;
+}
+.newmiddle-cont p{
+	font-size: 1.1em;
+	color: black;
+	text-align: left;
+	padding-top: 1em;
+	line-height: 1.9em;
+}
+.newmiddle-cont h6{
+	font-size: 0.8755em;
+	color: black;
+	text-align: left;
+	padding-top: 3.4em;
+}
+.newmiddle-cont h6 a{
+	padding: 17px 40px;
+	border:2px solid #747474;
+	color:#747474;
+	 -webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+.newmiddle-cont h6 a:hover{
+	border:2px solid #E44A4A;
+	color:#E44A4A;
+}
+
+
+
 /*start-grid FOURTH */
 
 
@@ -829,8 +930,14 @@ header.smaller nav a {
 	background: white;
 }
 .fourth-cont {
-	padding: 4% 0 10%;
+	width: 100%;
 }
+
+
+.fourth-cont img{
+	width: 100%;
+}
+
 .fourth-cont h2{
 	font-size: 1.7em;
 	color: black;
@@ -892,25 +999,20 @@ header.smaller nav a {
 .themetitle{
 	font-family: "Poppins", sans-serif;
 	font-weight: bolder;
-	font-size: 4em;
-	color : #28cac8;
+	font-size: 4.5em;
 }
 
 
 
-.themetitle2{
+
+
+.pasttopics{
 	font-family: "Poppins", sans-serif;
 	font-weight: bolder;
-	font-size: 2.2em;
-	color : #28cac8;
+	font-size: 3em;
 }
 
 
-
-
-.oppressed{
-	text-align: center !important;
-}
 
 
 
@@ -1046,9 +1148,6 @@ header.smaller nav a {
 	background: url(../images/soc_icons.png) no-repeat -270px -59px;
 }
 
-.footer-bottom {
-	padding: 2em 0;
-}
 .copy-right p
 {
 	font-family: "Poppins", sans-serif;
@@ -1175,9 +1274,6 @@ header.smaller nav a {
    top: 50%;
    left: 50%;
    transform: translateX(-50%) translateY(-50%);
-	 font-size: 5vw;
-
-
 
 }
 
@@ -1191,28 +1287,43 @@ header.smaller nav a {
 }
 
 .headertext{
-	font-size: 90px;
+	font-size: 150px;
 	font-family: "Poppins", sans-serif;
 	font-weight: bolder;
 
 }
 
-.footnote{
-	font-size: 1vw !important;
 
+
+.overlay1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #fde545;
 }
 
-.videotext{
-	text-align: center !important;
-	font-size: 1.2vw !important;
+.container:hover .overlay1 {
+  opacity: 1;
+}
+
+    .wordoverlay {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 
 
-sup {
-
-    font-size: smaller;
-}
 
 /*-- END OF HEADER DESIGN --*/
 
@@ -1220,8 +1331,6 @@ sup {
 .footer-bottom{
 	background-color: black;
 }
-
-
 
 
 
@@ -1578,3 +1687,120 @@ sup {
 		padding-top: 0.6em;
 	}
 }
+
+
+   </style>
+
+
+
+
+
+
+
+
+
+<!-- end slider -->
+</head>
+<body>
+
+
+
+
+<!-- FIRST SECTION // HEADER -->
+		<div class ="headerbg">
+				<h2 class ="headertitle">
+          <img src = "http://i.imgur.com/qryknQ9.png">
+			<!--	<span class ="spacer"><p class= "headertext">ACTION NETWORK</p></span> -->
+				</h2>
+		</div>
+
+<!-- SECOND SECTION -->
+
+	 	  <div class="middlemiddle-bg">
+	 	  <div class="wrap">
+		 	  <div class="middlemiddle-cont">
+
+		      <p class="paragraph1">
+		      	Most likely you’ve heard about feminism, but you may not have heard of intersectional feminism. Or maybe you’ve heard of it, but you don’t understand what it means or why it matters. We explain all of that, but first here is the general idea: intersectional feminism breaks through the barriers created by all identities with equal respect.
+		      </p>
+		      <p class="paragraph2">
+		      Entire textbooks are devoted to the definition of feminism, but it can be summed up in five simple words. Women and men are equal. We tend to hear stereotypes, like all feminists are man-hating monsters who think women should rule the world, but only with short hair and combat boots. The truth is that feminists come in all shapes and sizes. What does one of the most beautiful woman in America think about feminism?
+		      </p>
+
+
+
+
+ 			  </div>
+
+	   </div>
+	   </div>
+
+
+ <!--THIRD SECTION -->
+	 	 <div class="top-bg" style ="z-index:1">
+		 	  <div class="top-cont" style ="z-index:1">
+					<div class="newmiddle-cont">
+					 	<h1 class="themetitle"> This month</h1>
+					</div>
+          <br>
+		  <!--THIS MONTH'S TOPIC BANNER-->
+		  	    <center>
+		       <a href="http://action.shesthefirst.org/intersectional_feminism"> <img src = "http://i.imgur.com/SrCgDD9.jpg"></a>
+				</center>
+
+
+	   </div>
+	   </div>
+
+		 <div class="top-bg" style ="z-index:1">
+				<div class="top-cont" style ="z-index:1">
+
+
+					<div class="newmiddle-cont">
+            <center> 	<h1 class ="pasttopics"> Coming Up </h1> </center>
+					</div>
+			<!--THIS MONTH'S TOPIC BANNER-->
+						<center>
+						<img src ="http://i.imgur.com/osSlNfz.jpg">
+          </center>
+
+		 </div>
+		 </div>
+
+
+
+
+
+		 <div class="top-bg" style ="z-index:1">
+				<div class="top-cont" style ="z-index:1">
+
+
+					<div class="newmiddle-cont">
+					</div>
+			<!--THIS MONTH'S TOPIC BANNER-->
+						<center>
+						<img src ="http://i.imgur.com/9WXZgTJ.jpg">
+
+
+		 </div>
+		 </div>
+
+
+
+	 		  <!-- footer-bottom -->
+	 		<div class="footer-bottom">
+	 			 <div class="wrap">
+	 					 <div class="copy-right">
+	 						 <center><p>©2017 SHE'S THE FIRST |<a href="https://shesthefirst.org/terms-of-use"> TERMS OF USE </a> | <a href="https://shesthefirst.org/privacy-policy">PRIVACY POLICY</a></p>
+	 						 </center>
+	 					</div>
+	 	       <div class="clear"> </div>
+	 	    </div>
+
+
+</body>
+</html>
+
+
+
+ 
