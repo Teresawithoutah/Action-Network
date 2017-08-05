@@ -6,10 +6,7 @@
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 
 <script>
@@ -23,7 +20,11 @@
 </script>
 
   <!-- CSS AND BUTTON CSS -->
-
+  <style>
+               .hide{
+               display:none;
+               }
+            </style>
   <style>
 
 @import url("https://fonts.googleapis.com/css?family=Rubik+One");
@@ -863,12 +864,24 @@ header.smaller nav a {
 
 .aotmtitle{
 	font-family: 'Poppins', sans-serif;
-	font-size:  7vw;
+	font-size:  7.4vw;
 	font-weight: bolder;
 	color: black;
 }
 
-
+.subtitle{
+	font-family: 'Poppins', sans-serif;
+	font-size:  4vw;
+	font-weight: bolder;
+	color: black;
+}
+.subtitle1{
+	font-family: 'Poppins', sans-serif;
+	font-size:  4vw;
+	font-weight: bolder;
+	color: black;
+  margin-bottom: 20px;
+}
 /*start-grid2*/
 .middle-bg{
 	background: #E44A4A;
@@ -1541,6 +1554,80 @@ header.smaller nav a {
 }
 
 
+.fancybuttond {
+  display: inline-block;
+  color: white;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  vertical-align: middle;
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+  text-decoration: none;
+  font-size: 2.5vw;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-color: #f77474;
+  margin-top: 25px;
+
+
+}
+
+.fancybuttond:active {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.fancybuttond:active::before {
+  bottom: -5px;
+  height: 5px;
+  left: 3px;
+}
+.fancybuttond:active::after {
+  right: -5px;
+  width: 5px;
+  bottom: -3px;
+}
+
+
+
+.fancybutton5 {
+  display: inline-block;
+  padding: 20px 40px;
+  color: white;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  vertical-align: middle;
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+  text-decoration: none;
+  font-size: 2.5vw;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-color: #f77474;
+  margin-top: 10px;
+
+}
+
+.fancybutton5:active {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.fancybutton5:active::before {
+  bottom: -5px;
+  height: 5px;
+  left: 3px;
+}
+.fancybutton5:active::after {
+  right: -5px;
+  width: 5px;
+  bottom: -3px;
+}
+
 
 
 /*talkBTN*/
@@ -1796,6 +1883,9 @@ header.smaller nav a {
   transition: all .5s;
 }
 
+
+
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -1821,6 +1911,35 @@ header.smaller nav a {
 		border-radius: 10px;
 }
 
+
+
+/* The Modal (background) */
+.modal2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(248, 87, 86, 0.50)
+}
+
+/* Modal Content */
+.modal-content2 {
+    background-color: #0b3059;
+    margin: auto;
+    padding: 20px;
+/*    border: 1px solid #888; */
+    width: 70%;
+		border-radius: 10px;
+}
+
+
+
 /* The Close Button */
 .close {
     color: #f85756;
@@ -1835,6 +1954,20 @@ header.smaller nav a {
     text-decoration: none;
     cursor: pointer;
 }
+/* The Close Button */
+.close1 {
+    color: #f85756;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+    color:#f85756;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 .tips{
 	font-family: "Poppins";
@@ -1844,8 +1977,16 @@ header.smaller nav a {
 	line-height: 200%;
 }
 
+.tips2{
+	font-family: "Poppins";
+	color: white;
+	font-size: 2.8vw;
+	font-weight: bold;
+	line-height: 200%;
+}
 .previous{position:absolute;bottom:0;right:0;}
 .next {position:absolute;right:50%;top:50%;}
+
 
    </style>
 
@@ -1874,83 +2015,224 @@ header.smaller nav a {
 
 	   </div>
 	   </div>
+     <script>
+        $(document).ready(function(){
+         $("#btn1").click(function(){
+           $("#div1").toggle();
+           $("#div2").toggle();
+           $("#bb").toggle();
+           $("#bb1").toggle();
+         });
+        });
+     </script>
 
+     <script>
+        $(document).ready(function(){
+         $("#btn2").click(function(){
+           $("#div1").toggle();
+           $("#div2").toggle();
+           $("#bb").toggle();
+           $("#bb1").toggle();
+         });
+        });
+     </script>
 
  <!--THIRD SECTION -->
 	 	 <div class="top-bg" style ="z-index:1">
 		 	  <div class="top-cont" style ="z-index:1">
 		 <!--ACTIVIST OF THE MONTH-->
-		         <center><h1 class="aotmtitle">ACTIVIST OF THE MONTH</h1></center>
+		         <center><h1 class="aotmtitle">ACTIVISTS OF THE MONTH</h1></center>
 
-		    <div class="wrap">
+
+
+
+		    <div class="wrap" id="div1">
 
 		  <!--PHOTO OF ACTIVIST-->
 		  	    <center>
-<button onclick= "textMove()"> hi</button>
 		        <img  src = "http://i.imgur.com/MfE27FK.jpg">
 				</center>
 				<br>
-
+      <center>  <h1 class="subtitle"> Radio hosts Monica & Veronica </h1> </center>
+  <br>
+  <button  class="fancybuttond" id="btn1"><></button>
 
 				<p class="paragraph1">
 						Monica and Veronica are not your average girls. Both of them have worked hard at their studies to overcome poverty and immense obstacles in their education in their home country of Sierra Leone. Right now they are learning how to speak with courage at their radio show, where they educate women in their community about important issues such as teen pregnancy, child marriage, and STDs. Monica and Veronica work hard to understand the topics so that they can answer questions from their listeners. Not all of their listeners have a positive reaction to such difficult topics, but the girls respond with dignity and an original song, declaring “You can believe that we gonna make a better change.” You can believe these girls are fighting for the rights of women in their community.
 		        </p>
 
-			 </div>
-	   </div>
-	   </div>
-<!-- GET HER TIPS BUTTON -->
 
+
+
+
+			 </div>
+
+       <!--- SECOND SLIDE -->
+<div class="wrap">
+                   		    <div id ="div2" class="hide">
+
+                   		  <!--PHOTO OF ACTIVIST-->
+                   		  	    <center>
+                   		        <img  src = "http://i.imgur.com/WG6HZdO.jpg" width="700px" height="600px">
+                   				</center>
+                   				<br>
+                          <center>  <h1 class="subtitle1"> Podcast host Jess Weiner </h1> </center>
+                          <button  class="fancybuttond" id="btn2"><></button>
+
+
+                   				<p class="paragraph1">
+                               Jess Weiner has a pretty cool job: She works with brands to help them connect
+                                with women in a more authentic way. But Jess also hosts her own podcast called
+                                 Talk to Jess, in which she talks to women about how their careers, their ambitions,
+                                 and what shaped them into who they are today. Through her podcast,
+                                 she’s able to tackle topics like the representation of women in media and pop culture,
+                                  and encourages women everywhere to go after their goals with confidence.
+                   		        </p>
+
+
+
+
+                   			 </div>
+                       </div>
+	   </div>
+	   </div>
+
+
+
+
+<!-- GET MONICA TIPS BUTTON -->
+<div id ="bb" >
  <div id = "fancybutton" class="fancybutton"> want their cheat sheet to success?
  > </div>
-
- <!-- The Modal -->
- <div id="myModal" class="modal">
-
-   <!-- Modal content -->
-   <div class="modal-content"  style ="z-index:4 position: absolute;">
-     <span class="close">&times;</span>
-     <p class="tips">1. Use words that listeners can understand. <br>
-				2. Speak loudly so you can be heard and listeners will participate. <br>
-				3. Make sure you have the equipment you need. <br>
-				4. Do community outreach along with your show. <br>
-				5. Make sure that people are listening and interested. </p>
-   </div>
-
- </div>
+</div>
 
 
- <!-- POP UP BUTTON SCRIPT -->
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content"  style ="z-index:4 position: absolute;">
+    <span class="close">&times;</span>
+    <p class="tips">1. Use words that listeners can understand. <br>
+       2. Speak loudly so you can be heard and listeners will participate. <br>
+       3. Make sure you have the equipment you need. <br>
+       4. Do community outreach along with your show. <br>
+       5. Make sure that people are listening and interested. </p>
+  </div>
+
+</div>
+
+<!-- POP UP BUTTON SCRIPT -->
 
 
-  <script>
-  // Get the modal
-  var modal = document.getElementById('myModal');
+ <script>
+ // Get the modal
+ var modal = document.getElementById('myModal');
 
-  // Get the button that opens the modal
-  var btn = document.getElementById("fancybutton");
+ // Get the button that opens the modal
+ var btn = document.getElementById("fancybutton");
 
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
+ // Get the <span> element that closes the modal
+ var span = document.getElementsByClassName("close")[0];
 
-  // When the user clicks the button, open the modal
-  btn.onclick = function() {
-      modal.style.display = "block";
-  }
+ // When the user clicks the button, open the modal
+ btn.onclick = function() {
+     modal.style.display = "block";
+ }
 
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-      modal.style.display = "none";
-  }
+ // When the user clicks on <span> (x), close the modal
+ span.onclick = function() {
+     modal.style.display = "none";
+ }
 
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-      if (event.target == modal) {
-          modal.style.display = "none";
-      }
-  }
-  </script>
- <!-- END -->
+ // When the user clicks anywhere outside of the modal, close it
+ window.onclick = function(event) {
+     if (event.target == modal) {
+         modal.style.display = "none";
+     }
+ }
+ </script>
+<!-- END -->
+
+
+
+
+
+
+
+
+
+<div id="bb1" class="hide">
+ <div id = "fancybutton5" class="fancybutton5"> want her cheat sheet to success?> </div>
+</div>
+
+
+
+
+
+     <div id="myModal2" class="modal2">
+
+
+       <div class="modal-content2"  style ="z-index:4 position: absolute;">
+         <span class="close1">&times;</span>
+         <p class="tips2">1. <span style="color:#099695;">You always have to think about your audience.</span> What do they need to hear, what do
+they want to hear, and what will surprise them to hear? If you can think about that, then
+you’re always going to be one step ahead of your listener. You’re reacting to them,
+you’re giving to them, but you’re also giving them something they weren’t expecting.
+ <br>
+ <br>
+    				2. <span style="color:#099695;">Consider your guest.</span> If you’re inviting someone into a conversation, they’re not a prop.
+They’re not a blank list of generic questions -- they’re a person. It’s very sacred to have
+a conversation with someone and have them share things about their life with you. So,
+make sure you’re honoring that by really having the conversation you want to have.
+<br>
+<br>
+    				3. <span style="color:#099695;">Don’t forget to enjoy it.</span> People can hear it in your voice if you’re enjoying a
+conversation. I know in my podcast, I curse and I laugh a lot. When I listen back, I
+actually love those moments because it feels like I’m peering into a real conversation
+versus a staged interview. People can feel that joy and share in it.
+ <br>
+ <br>
+    				</p>
+       </div>
+
+     </div>
+
+
+
+
+
+ <script>
+ // Get the modal
+ var modal2 = document.getElementById('myModal2');
+
+ // Get the button that opens the modal
+ var btn1 = document.getElementById("fancybutton5");
+
+ // Get the <span> element that closes the modal
+ var span1 = document.getElementsByClassName("close1")[0];
+
+ // When the user clicks the button, open the modal
+ btn1.onclick = function() {
+     modal2.style.display = "block";
+ }
+
+ // When the user clicks on <span> (x), close the modal
+ span1.onclick = function() {
+     modal2.style.display = "none";
+ }
+
+ // When the user clicks anywhere outside of the modal, close it
+ window.onclick = function(event) {
+     if (event.target == modal2) {
+         modal2.style.display = "none";
+     }
+ }
+ </script>
+
+
+
+
 
 
 
