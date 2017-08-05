@@ -20,7 +20,7 @@
 
   ga('create', 'UA-103367687-5', 'auto');
   ga('send', 'pageview');
-
+</script>
 
   <!-- CSS AND BUTTON CSS -->
 
@@ -75,7 +75,7 @@ html,body{
 }
 
 .buttonspace{
-	margin: 60px;
+	padding-top: 3em;
 
 }
 /* SCROLLING HEADER */
@@ -751,7 +751,7 @@ header.smaller nav a {
 	background:#099695;
 }
 .top-cont {
-	padding: 2% 0 5%;
+	padding: 2% 0 6%;
 }
 .top-cont h2{
 	font-size: 1.7em;
@@ -760,7 +760,7 @@ header.smaller nav a {
 	text-align: left;
 }
 .top-cont p{
-	font-size: 1.8vw;
+	font-size: 1.5em;
 	color: black;
 	text-align: left;
 	padding-top: 1em;
@@ -839,6 +839,7 @@ header.smaller nav a {
 	font-size: 6.5vw;
 	font-weight: bold;
 	color: black;
+  padding-bottom: 1em;
 }
 
 
@@ -1400,10 +1401,7 @@ header.smaller nav a {
 	.f_nav5 li a {
 		font-size: 0.8em;
 	}
-	.top-cont p {
-		font-size: 2vw;
-		padding-top: 0.6em;
-	}
+
 }
 @media only screen and (max-width: 320px){
 	.wrap{
@@ -1519,10 +1517,12 @@ header.smaller nav a {
   font-family: "Poppins", sans-serif;
   font-weight: lighter;
   text-decoration: none;
-  font-size: 2vw;
+  font-size: 2.5vw;
   -webkit-transition: all .5s;
   transition: all .5s;
   background-color: #f77474;
+  margin-top: 10px;
+
 }
 
 .fancybutton:active {
@@ -1844,6 +1844,9 @@ header.smaller nav a {
 	line-height: 200%;
 }
 
+.previous{position:absolute;bottom:0;right:0;}
+.next {position:absolute;right:50%;top:50%;}
+
    </style>
 
 
@@ -1879,13 +1882,16 @@ header.smaller nav a {
 		 <!--ACTIVIST OF THE MONTH-->
 		         <center><h1 class="aotmtitle">ACTIVIST OF THE MONTH</h1></center>
 
-		    <div class="wrap" s>
+		    <div class="wrap">
 
 		  <!--PHOTO OF ACTIVIST-->
 		  	    <center>
-		        <img  src = "http://i.imgur.com/BUJ587o.jpg">
+<button onclick= "textMove()"> hi</button>
+		        <img  src = "http://i.imgur.com/MfE27FK.jpg">
 				</center>
 				<br>
+
+
 				<p class="paragraph1">
 						Monica and Veronica are not your average girls. Both of them have worked hard at their studies to overcome poverty and immense obstacles in their education in their home country of Sierra Leone. Right now they are learning how to speak with courage at their radio show, where they educate women in their community about important issues such as teen pregnancy, child marriage, and STDs. Monica and Veronica work hard to understand the topics so that they can answer questions from their listeners. Not all of their listeners have a positive reaction to such difficult topics, but the girls respond with dignity and an original song, declaring “You can believe that we gonna make a better change.” You can believe these girls are fighting for the rights of women in their community.
 		        </p>
@@ -1951,7 +1957,7 @@ header.smaller nav a {
 <!--FOURTH SECTION-->
 
 	 	  <div class="middlemiddle-bg"  style ="z-index:2">
-		       <center><h1 class="readyforactiontitle">Ready for action? <br> I want to...</h1></center> <br> <br>
+		       <center><h1 class="readyforactiontitle">Ready for action? <br> I want to...</h1></center>
 		       <div class="wrap">
 		       		<div class = "buttonspace">
                   		  <a href="http://action.shesthefirst.org/social_media"><div class="tweet"><center><p style="color: white;">TWEET ABOUT IT</p></center></div></a>
@@ -1963,7 +1969,7 @@ header.smaller nav a {
 		     		  <a href="http://action.shesthefirst.org/host"><div class="host"><center><p>HOST EVENT</p></center></div></a>
 		     		  <br>
 		     		  <br>
-		     		  <a href="http://action.shesthefirst.org/activist_challenge"><div class="challenge"><center><p style="color: white;">ACTIVIST CHALLENGE</p></center></div><a/>
+		     		  <a href="http://action.shesthefirst.org/activist_challenge"><div class="challenge"><center><p style="color: white;">ACTIVIST CHALLENGE: START A PODCAST/ RADIOSHOW</p></center></div><a/>
 		     		  <br>
 		     		  <br>
 
