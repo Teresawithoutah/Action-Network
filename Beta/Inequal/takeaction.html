@@ -1,15 +1,13 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<!-- TITLE OF TAB -->
-<title>Action Network</title>
-<!-- ICON OF TAB -->
+<title>Take Action</title>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/3dbutton/css/style.css" rel ="stylesheet" type ="text/css" media="all"/>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -17,18 +15,17 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-103367687-1', 'auto');
+  ga('create', 'UA-103367687-5', 'auto');
   ga('send', 'pageview');
-
 </script>
 
-
-
-
-
+  <!-- CSS AND BUTTON CSS -->
   <style>
-
-
+               .hide{
+               display:none;
+               }
+            </style>
+  <style>
 
 @import url("https://fonts.googleapis.com/css?family=Rubik+One");
 
@@ -65,44 +62,23 @@ img{max-width:100%;}
 /*end reset*/
 
 html,body{
-	font-family: "Poppins", sans-serif;
+	font-family: "Poppins";
 	font-size:100%;
-	background-color: black;
+	background-color: white;
 	margin:0;
 	padding: 0;
 	overflow-x:hidden;
-	width: 100vw;
-}
-
-.yup {
-    position: relative;
-
-}
-.yup .yee {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    color: #FFF;
-}
-.yup:hover .yee {
-    display: block;
-    background: rgba(248, 87, 86, 0.4);
-}
+	-moz-transform: scale(0.8, 0.8); /* Moz-browsers */
+    zoom: 0.8; /* Other non-webkit browsers */
+    zoom: 80%; /* Webkit browsers */
 
 
+}
 
 .buttonspace{
-	margin: 60px;
+	padding-top: 3em;
 
 }
-
-.spacer{
-	padding-bottom:600px;
-}
-
 /* SCROLLING HEADER */
 
 header {
@@ -211,7 +187,7 @@ header.smaller nav a {
 }
 .header-bg{
 	background: white;
-	border-top:10px solid #fde545;
+	border-top:10px solid #28cacb;
 
 }
 .header{
@@ -767,24 +743,17 @@ header.smaller nav a {
 }
 /*THIRD SECTION*/
 
-/*.top-bg1 {
+.top-bg1 {
 	background: #fff;
 	border-top: 1px solid #eee;
 	margin-top: 3%;
 }
 .top-bg{
-	background:#fde545;
+	background:#099695;
 }
-*/
-
-
 .top-cont {
-	padding: 4% 0 4%;
-	background: white;
+	padding: 2% 0 6%;
 }
-
-
-
 .top-cont h2{
 	font-size: 1.7em;
 	color: #747474;
@@ -792,11 +761,15 @@ header.smaller nav a {
 	text-align: left;
 }
 .top-cont p{
-	font-size: 0.8755em;
+	font-size: 1.5em;
 	color: black;
 	text-align: left;
 	padding-top: 1em;
 	line-height: 1.9em;
+	padding-left: 2em;
+	padding-right: 2em;
+	font-family: "Poppins";
+	font-weight: lighter;
 }
 .top-cont h6{
 	font-size: 0.8755em;
@@ -819,15 +792,12 @@ header.smaller nav a {
 	color:#E44A4A;
 }
 
-
-
-
 /*start-grid middlemiddle*/
 .middlemiddle-bg{
 	background: white;
 }
 .middlemiddle-cont {
-	padding: 4% 0 1%;
+	padding: 4% 0 10%;
 }
 .middlemiddle-cont h2{
 	font-size: 1.7em;
@@ -836,11 +806,13 @@ header.smaller nav a {
 	text-align: left;
 }
 .middlemiddle-cont p{
-	font-size: 1.1em;
+	font-size: 1.6em;
 	color: black;
 	text-align: left;
 	padding-top: 1em;
 	line-height: 1.9em;
+	padding-left: 3.5em;
+	padding-right: 3.5em;
 }
 .middlemiddle-cont h6{
 	font-size: 0.8755em;
@@ -863,118 +835,12 @@ header.smaller nav a {
 	color:#E44A4A;
 }
 
-
-
-
-
-/*start-grid middlemiddle*/
-.newmiddle-bg{
-	background: white;
-}
-.newmiddle-cont {
-	padding: 0 12.5%;
-}
-.newmiddle-cont h2{
-	font-size: 1.7em;
-	color: black;
-	text-shadow: 0 1px rgba(0, 0, 0, 0.41);
-	text-align: left;
-}
-.newmiddle-cont p{
-	font-size: 1.1em;
-	color: black;
-	text-align: left;
-	padding-top: 1em;
-	line-height: 1.9em;
-}
-.newmiddle-cont h6{
-	font-size: 0.8755em;
-	color: black;
-	text-align: left;
-	padding-top: 3.4em;
-}
-.newmiddle-cont h6 a{
-	padding: 17px 40px;
-	border:2px solid #747474;
-	color:#747474;
-	 -webkit-transition: all 0.5s ease-out;
-	-moz-transition: all 0.5s ease-out;
-	-ms-transition: all 0.5s ease-out;
-	-o-transition: all 0.5s ease-out;
-	transition: all 0.5s ease-out;
-}
-.newmiddle-cont h6 a:hover{
-	border:2px solid #E44A4A;
-	color:#E44A4A;
-}
-
-
-
-/*start-grid FOURTH */
-
-
-.fourth-bg{
-	background: white;
-}
-.fourth-cont {
-	width: 100%;
-}
-
-
-.fourth-cont img{
-	width: 100%;
-}
-
-.fourth-cont h2{
-	font-size: 1.7em;
-	color: black;
-	text-shadow: 0 1px rgba(0, 0, 0, 0.41);
-	text-align: left;
-}
-.fourth-cont p{
-	font-size: 1.1em;
-	color: black;
-	text-align: left;
-	padding-top: 1em;
-	line-height: 1.9em;
-}
-.fourth-cont h6{
-	font-size: 0.8755em;
-	color: black;
-	text-align: left;
-	padding-top: 3.4em;
-}
-.fourth-cont h6 a{
-	padding: 17px 40px;
-	border:2px solid #747474;
-	color:#747474;
-	 -webkit-transition: all 0.5s ease-out;
-	-moz-transition: all 0.5s ease-out;
-	-ms-transition: all 0.5s ease-out;
-	-o-transition: all 0.5s ease-out;
-	transition: all 0.5s ease-out;
-}
-.fourth-cont h6 a:hover{
-	border:2px solid #E44A4A;
-	color:#E44A4A;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 .readyforactiontitle{
 	font-family: 'Poppins', sans-serif ;
-	font-size: 120px;
+	font-size: 6.5vw;
 	font-weight: bold;
 	color: black;
+  padding-bottom: 1em;
 }
 
 
@@ -984,20 +850,13 @@ header.smaller nav a {
 
 
 .themetitle{
-	font-family: "Poppins", sans-serif;
-	font-weight: bolder;
-	font-size: 3em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100px;
 }
 
 
 
 
-
-.pasttopics{
-	font-family: "Poppins", sans-serif;
-	font-weight: bolder;
-	font-size: 3em;
-}
 
 
 
@@ -1005,12 +864,24 @@ header.smaller nav a {
 
 .aotmtitle{
 	font-family: 'Poppins', sans-serif;
-	font-size: 100px;
+	font-size:  7.4vw;
 	font-weight: bolder;
-	color: white;
+	color: black;
 }
 
-
+.subtitle{
+	font-family: 'Poppins', sans-serif;
+	font-size:  4vw;
+	font-weight: bolder;
+	color: black;
+}
+.subtitle1{
+	font-family: 'Poppins', sans-serif;
+	font-size:  4vw;
+	font-weight: bolder;
+	color: black;
+  margin-bottom: 25px;
+}
 /*start-grid2*/
 .middle-bg{
 	background: #E44A4A;
@@ -1134,14 +1005,16 @@ header.smaller nav a {
 .social-icons li.icon5:hover {
 	background: url(../images/soc_icons.png) no-repeat -270px -59px;
 }
-
+.footer-bottom {
+	padding: 2em 0;
+}
 .copy-right p
 {
-	font-family: "Poppins", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size:0.92355em;
 	float:left;
-	padding-top:1%;
-	color: white;
+	padding-top:2.3%;
+	color:#585858;
 
 }
 .copy-right p a
@@ -1155,7 +1028,7 @@ header.smaller nav a {
 }
 .copy-right p a:hover
 {
-	color: white;
+	color: #585858;
 }
 .slider {
 	margin-top: 5em;
@@ -1252,7 +1125,7 @@ header.smaller nav a {
   position: relative;
   background-color: #3C4F64;
   background-size: cover;
-  height:500px;
+  height:700px;
 }
 
 
@@ -1267,7 +1140,7 @@ header.smaller nav a {
 .headertitle span.spacer {
    color: white;
    font: bold 60px/70px;
-   letter-spacing: 2px;
+   letter-spacing: -1px;
    background: rgb(0, 0, 0); /* fallback color */
    background: rgba(253,239,145,0.5);
 
@@ -1275,49 +1148,18 @@ header.smaller nav a {
 
 .headertext{
 	font-size: 150px;
-	font-family: "Poppins", sans-serif;
-	font-weight: bolder;
+	font-family: "Poppins";
 
 }
-
-
-
-.overlay1 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #fde545;
-}
-
-.container:hover .overlay1 {
-  opacity: 1;
-}
-
-    .wordoverlay {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
 
 
 
 /*-- END OF HEADER DESIGN --*/
 
 
-.footer-bottom{
-	background-color: black;
-}
+
+
+
 
 
 
@@ -1572,10 +1414,7 @@ header.smaller nav a {
 	.f_nav5 li a {
 		font-size: 0.8em;
 	}
-	.top-cont p {
-		font-size: 0.8em;
-		padding-top: 0.6em;
-	}
+
 }
 @media only screen and (max-width: 320px){
 	.wrap{
@@ -1670,10 +1509,12 @@ header.smaller nav a {
 		margin-right: 6PX;
 	}
 	.top-cont p {
-		font-size: 0.8em;
+		font-size: 2vw;
 		padding-top: 0.6em;
 	}
 }
+
+
 
 
 .fancybutton {
@@ -1682,39 +1523,21 @@ header.smaller nav a {
   color: white;
   position: relative;
   top: 50%;
-  left: 27vw;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   vertical-align: middle;
   font-family: "Poppins", sans-serif;
   font-weight: lighter;
   text-decoration: none;
-  /* SIZE font-size: 2vw; */
+  font-size: 3.7vw;
   -webkit-transition: all .5s;
   transition: all .5s;
   background-color: #f77474;
+  margin-top: 10px;
+
 }
-/* .fancybutton::before {
-  bottom: -15px;
-  height: 15px;
-  width: 100%;
-  left: 8px;
-  -webkit-transform: skewX(45deg);
-          transform: skewX(45deg);
-  background-color: #196090;
-}
-*/
-/*
-.fancybutton::after {
-  right: -15px;
-  height: 100%;
-  width: 15px;
-  bottom: -8px;
-  -webkit-transform: skewY(45deg);
-          transform: skewY(45deg);
-  background-color: #124364;
-}
-*/
+
 .fancybutton:active {
   margin-left: 10px;
   margin-top: 10px;
@@ -1731,56 +1554,38 @@ header.smaller nav a {
 }
 
 
-
-.fancybutton2 {
+.fancybuttond {
   display: inline-block;
-  padding: 20px 40px;
   color: white;
   position: relative;
+    padding: 20px 40px;
   top: 50%;
-  left: 46%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   vertical-align: middle;
   font-family: "Poppins", sans-serif;
   font-weight: lighter;
   text-decoration: none;
-  /* SIZE font-size: 2vw; */
+  font-size: 3vw;
   -webkit-transition: all .5s;
   transition: all .5s;
   background-color: #f77474;
+  margin-top: 25px;
+
+
 }
-/* .fancybutton::before {
-  bottom: -15px;
-  height: 15px;
-  width: 100%;
-  left: 8px;
-  -webkit-transform: skewX(45deg);
-          transform: skewX(45deg);
-  background-color: #196090;
-}
-*/
-/*
-.fancybutton::after {
-  right: -15px;
-  height: 100%;
-  width: 15px;
-  bottom: -8px;
-  -webkit-transform: skewY(45deg);
-          transform: skewY(45deg);
-  background-color: #124364;
-}
-*/
-.fancybutton2:active {
+
+.fancybuttond:active {
   margin-left: 10px;
   margin-top: 10px;
 }
-.fancybutton2:active::before {
+.fancybuttond:active::before {
   bottom: -5px;
   height: 5px;
   left: 3px;
 }
-.fancybutton2:active::after {
+.fancybuttond:active::after {
   right: -5px;
   width: 5px;
   bottom: -3px;
@@ -1788,172 +1593,691 @@ header.smaller nav a {
 
 
 
+.fancybutton5 {
+  display: inline-block;
+  padding: 20px 40px;
+  color: white;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  vertical-align: middle;
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+  text-decoration: none;
+  font-size: 3.7vw;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-color: #f77474;
+  margin-top: 10px;
 
+}
+
+.fancybutton5:active {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.fancybutton5:active::before {
+  bottom: -5px;
+  height: 5px;
+  left: 3px;
+}
+.fancybutton5:active::after {
+  right: -5px;
+  width: 5px;
+  bottom: -3px;
+}
+
+
+
+/*talkBTN*/
+
+
+.talk{
+  display: inline-block;
+  padding: 20px 40px;
+  color: black;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  vertical-align: middle;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 5vw;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-color: #28cac8;
+  width: 500vw;
+  margin-bottom: -30px;
+
+
+  /* TO EXTEND THE WHOLE HORTIZIONTAL OF PAGE == width: 500vw; */
+}
+
+
+
+.talk:active {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.talk:active::before {
+  bottom: -5px;
+  height: 5px;
+  left: 3px;
+}
+.talkbtn:active::after {
+  right: -5px;
+  width: 5px;
+  bottom: -3px;
+}
+
+.talkbtn::before, .talkbtn::after {
+  position: absolute;
+  content: '';
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+/*hostBTN*/
+
+.host{
+  display: inline-block;
+  padding: 20px 40px;
+  color: black;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  vertical-align: middle;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 5vw;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-color: #f85756;
+  width: 500vw;
+  margin-bottom: -40px;
+	padding-bottom: 25px;
+
+
+  /* TO EXTEND THE WHOLE HORTIZIONTAL OF PAGE == width: 500vw; */
+}
+
+
+
+.host:active {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.host:active::before {
+  bottom: -5px;
+  height: 5px;
+  left: 3px;
+}
+.hostbtn:active::after {
+  right: -5px;
+  width: 5px;
+  bottom: -3px;
+}
+
+.hostbtn::before, .hostbtn::after {
+  position: absolute;
+  content: '';
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+
+/*challengeBTN*/
+
+.challenge{
+  display: inline-block;
+  padding: 20px 40px;
+  color: black;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  vertical-align: middle;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 5vw;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-color: #0b3059;
+  width: 500vw;
+  margin-bottom: -40px;
+	padding-bottom: 30px;
+
+  /* TO EXTEND THE WHOLE HORTIZIONTAL OF PAGE == width: 500vw; */
+}
+
+
+
+.challenge:active {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.challenge:active::before {
+  bottom: -5px;
+  height: 5px;
+  left: 3px;
+}
+.challengebtn:active::after {
+  right: -5px;
+  width: 5px;
+  bottom: -3px;
+}
+
+.challengebtn::before, .challengebtn::after {
+  position: absolute;
+  content: '';
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+/*tweetBTN*/
+
+.tweet{
+  display: inline-block;
+  padding: 20px 40px;
+  color: black;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  vertical-align: middle;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 5vw;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-color: black;
+  width: 500vw;
+  margin-bottom: -55px;
+	padding-bottom:45px;
+
+
+  /* TO EXTEND THE WHOLE HORTIZIONTAL OF PAGE == width: 500vw; */
+}
+
+
+
+.tweet:active {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.tweet:active::before {
+  bottom: -5px;
+  height: 5px;
+  left: 700px;
+}
+.tweetbtn:active::after {
+  right: -5px;
+  width: 5px;
+  bottom: -3px;
+}
+
+.tweetbtn::before, .tweetbtn::after {
+  position: absolute;
+  content: '';
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+
+/*thinkBTN*/
+
+.think{
+  display: inline-block;
+  padding: 25px 40px;
+  color: black;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  vertical-align: middle;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 4.5vw;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-color: #f85756;
+  width: 500vw;
+
+  /* TO EXTEND THE WHOLE HORTIZIONTAL OF PAGE == width: 500vw; */
+}
+
+
+
+.think:active {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.think:active::before {
+  bottom: -5px;
+  height: 5px;
+  left: 3px;
+}
+.thinkbtn:active::after {
+  right: -5px;
+  width: 5px;
+  bottom: -3px;
+}
+
+.thinkbtn::before, .thinkbtn::after {
+  position: absolute;
+  content: '';
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 200px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(248, 87, 86, 0.50)
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #0b3059;
+    margin: auto;
+    padding: 20px;
+/*    border: 1px solid #888; */
+    width: 70%;
+		border-radius: 10px;
+}
+
+
+
+/* The Modal (background) */
+.modal2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(248, 87, 86, 0.50)
+}
+
+/* Modal Content */
+.modal-content2 {
+    background-color: #0b3059;
+    margin: auto;
+    padding: 20px;
+/*    border: 1px solid #888; */
+    width: 70%;
+		border-radius: 10px;
+}
+
+
+
+/* The Close Button */
+.close {
+    color: #f85756;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color:#f85756;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* The Close Button */
+.close1 {
+    color: #f85756;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+    color:#f85756;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tips{
+	font-family: "Poppins";
+	color: white;
+	font-size: 2.8vw;
+	font-weight: bold;
+	line-height: 200%;
+}
+
+.tips2{
+	font-family: "Poppins";
+	color: white;
+	font-size: 2.8vw;
+	font-weight: bold;
+	line-height: 200%;
+}
+.previous{position:absolute;bottom:0;right:0;}
+.next {position:absolute;right:50%;top:50%;}
 
 
    </style>
 
 
 
-
-
-
-
-
-
-<!-- end slider -->
 </head>
 <body>
 
-
-
-
 <!-- FIRST SECTION // HEADER -->
-		<div class ="headerbg">
-				<h2 class ="headertitle">
-          <img src = "http://i.imgur.com/qryknQ9.png">
-			<!--	<span class ="spacer"><p class= "headertext">ACTION NETWORK</p></span> -->
-				</h2>
+		<div class="headerbg">
+				<h2 class = "headertitle">
+  <img src ="http://i.imgur.com/2Fl6VAu.png">
+				<!-- <span class ="spacer"><p class= "headertext">Intersectional Feminism</p></span> -->				</h2>
 		</div>
 
+<!-- SECOND SECTION -->
 
+	 	  <div class="middlemiddle-bg">
+	 	  <div class="wrap">
+		 	  <div class="middlemiddle-cont">
+		   <!-- TITLE   <center>	<h1 class="themetitle"> Catchy Title</h1></center> -->
+		      <p class="paragraph1">
+            Congratulations! You’ve just learned important new concepts that affect girls and women all around the world.
+            Now time for the hard part, applying those concepts in your everyday life.
+            We are so proud of all the hard work you’ve put in so far, but don’t stop now.
+            We need your help! 
+		      </p>
+ 			  </div>
 
+	   </div>
+	   </div>
+     <script>
+        $(document).ready(function(){
+         $("#btn1").click(function(){
+           $("#div1").toggle();
+           $("#div2").toggle();
+           $("#bb").toggle();
+           $("#bb1").toggle();
+         });
+        });
+     </script>
 
-    <div class="middlemiddle-bg">
-   <div class="wrap">
-     <div class="middlemiddle-cont">
-
-       <p class="paragraph1">
-         Welcome to the STF Action Network! Each month, you’ll be invited to tackle a different issue affecting women and girls’ lives ―and you can do it right on your phone, no matter where you are.
-       </p>
-       <p class="paragraph2">
-         Get ready for:
-       </p>
-       <p class="paragraph2">
-         well-vetted content (articles, podcasts, and videos)
-         how-to guides from young and experienced activists about how they’ve made a difference―and how you can too
-         points you can earn for reading and taking action (accountability is everything!)
-       </p>
-       <p class="paragraph2">
-         This month, we're focusing in on intersectional feminism. Sign up with your email and mobile number - we promise never to share them - and let's get started on creating a more equitable world for women and girls.
-       </p>
-
-
-
-
-     </div>
-
-  </div>
-  </div>
-
-
-
-
-    	 	  <div class="middlemiddle-bg">
-    	 	  <div class="wrap">
-              <br>
-              <br>
-              <br>
-              <br>
-
-              <a href ="https://action-shesthefirst.nationbuilder.com/login"><div class="fancybutton"> login</div> </a>
-              <a href ="http://action.shesthefirst.org/join">    <div class="fancybutton2"> signup</div> </a>
-
-
-
-
-    	   </div>
-    	   </div>
-
-
+     <script>
+        $(document).ready(function(){
+         $("#btn2").click(function(){
+           $("#div1").toggle();
+           $("#div2").toggle();
+           $("#bb").toggle();
+           $("#bb1").toggle();
+         });
+        });
+     </script>
 
  <!--THIRD SECTION -->
 	 	 <div class="top-bg" style ="z-index:1">
 		 	  <div class="top-cont" style ="z-index:1">
-					<div class="newmiddle-cont">
-					<center> 	<h1 class="themetitle"> This month</h1> <center>
-					</div>
-          <br>
-		  <!--THIS MONTH'S TOPIC BANNER-->
+		 <!--ACTIVIST OF THE MONTH-->
+		         <center><h1 class="aotmtitle">ACTIVISTS OF THE MONTH</h1></center>
 
+
+
+
+		    <div class="wrap" id="div1">
+
+		  <!--PHOTO OF ACTIVIST-->
 		  	    <center>
-<!-- WHERE DOES THIS LINK TOO --> <a href="https://teresawithoutah.github.io/Action-Network/Beta/Fem/intersectionalfeminism.html"> <img src = "http://i.imgur.com/SrCgDD9.jpg"></a>				</center>
+		        <img  src = "http://i.imgur.com/MfE27FK.jpg">
+				</center>
+				<br>
+      <center>  <h1 class="subtitle"> Radio hosts Monica & Veronica </h1> </center>
+  <br>
+  <button  class="fancybuttond" id="btn1"><></button>
 
-			</div>
-
-
-      <!-- SECOND SECTION -->
-
-      	 	  <div class="middlemiddle-bg">
-      	 	  <div class="wrap">
-      		 	  <div class="middlemiddle-cont">
-
-      		      <p class="paragraph1">
-      		      	Most likely you’ve heard about feminism, but you may not have heard of intersectional feminism. Or maybe you’ve heard of it, but you don’t understand what it means or why it matters. We explain all of that, but first here is the general idea: intersectional feminism breaks through the barriers created by all identities with equal respect.
-      		      </p>
-      		      <p class="paragraph2">
-      		      Entire textbooks are devoted to the definition of feminism, but it can be summed up in five simple words. Women and men are equal. We tend to hear stereotypes, like all feminists are man-hating monsters who think women should rule the world, but only with short hair and combat boots. The truth is that feminists come in all shapes and sizes. What does one of the most beautiful woman in America think about feminism?
-      		      </p>
+				<p class="paragraph1">
+						Monica and Veronica are not your average girls. Both of them have worked hard at their studies to overcome poverty and immense obstacles in their education in their home country of Sierra Leone. Right now they are learning how to speak with courage at their radio show, where they educate women in their community about important issues such as teen pregnancy, child marriage, and STDs. Monica and Veronica work hard to understand the topics so that they can answer questions from their listeners. Not all of their listeners have a positive reaction to such difficult topics, but the girls respond with dignity and an original song, declaring “You can believe that we gonna make a better change.” You can believe these girls are fighting for the rights of women in their community.
+		        </p>
 
 
 
 
-       			  </div>
 
-      	   </div>
-      	   </div>
+			 </div>
+
+       <!--- SECOND SLIDE -->
+<div class="wrap">
+                   		    <div id ="div2" class="hide">
+
+                   		  <!--PHOTO OF ACTIVIST-->
+                   		  	    <center>
+                   		        <img  src = "http://i.imgur.com/awYEh36.jpg" width="750px" height="600px">
+                   				</center>
+                   				<br>
+                          <center>  <h1 class="subtitle1"> Podcast host Jess Weiner </h1> </center>
+                          <button  class="fancybuttond" id="btn2"><></button>
+
+
+                   				<p class="paragraph1">
+                               Jess Weiner has a pretty cool job: She works with brands to help them connect
+                                with women in a more authentic way. But Jess also hosts her own podcast called
+                                 Talk to Jess, in which she talks to women about how their careers, their ambitions,
+                                 and what shaped them into who they are today. Through her podcast,
+                                 she’s able to tackle topics like the representation of women in media and pop culture,
+                                  and encourages women everywhere to go after their goals with confidence.
+                   		        </p>
 
 
 
+
+                   			 </div>
+                       </div>
 	   </div>
 	   </div>
 
-		 <div class="top-bg" style ="z-index:1">
-				<div class="top-cont" style ="z-index:1">
-
-
-					<div class="newmiddle-cont">
-            <center> 	<h1 class ="pasttopics"> Coming Up </h1> </center>
-            <br>
-					</div>
-			<!--THIS MONTH'S TOPIC BANNER-->
-						<center>
-              <a href="https://teresawithoutah.github.io/Action-Network/Beta/Inequal/SADV.html"><img src ="http://i.imgur.com/9WXZgTJ.jpg"></a>
-
-          </center>
-
-		 </div>
-		 </div>
 
 
 
+<!-- GET MONICA TIPS BUTTON -->
+<div id ="bb" >
+ <div id = "fancybutton" class="fancybutton"> want their cheat sheet to success?
+ > </div>
+</div>
 
 
-		 <div class="top-bg" style ="z-index:1">
-				<div class="top-cont" style ="z-index:1">
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content"  style ="z-index:4 position: absolute;">
+    <span class="close">&times;</span>
+    <p class="tips">1. Use words that listeners can understand. <br>
+       2. Speak loudly so you can be heard and listeners will participate. <br>
+       3. Make sure you have the equipment you need. <br>
+       4. Do community outreach along with your show. <br>
+       5. Make sure that people are listening and interested. </p>
+  </div>
+
+</div>
+
+<!-- POP UP BUTTON SCRIPT -->
 
 
-					<div class="newmiddle-cont">
-					</div>
-			<!--THIS MONTH'S TOPIC BANNER-->
-						<center>
-            	<img src ="http://i.imgur.com/osSlNfz.jpg">
+ <script>
+ // Get the modal
+ var modal = document.getElementById('myModal');
+
+ // Get the button that opens the modal
+ var btn = document.getElementById("fancybutton");
+
+ // Get the <span> element that closes the modal
+ var span = document.getElementsByClassName("close")[0];
+
+ // When the user clicks the button, open the modal
+ btn.onclick = function() {
+     modal.style.display = "block";
+ }
+
+ // When the user clicks on <span> (x), close the modal
+ span.onclick = function() {
+     modal.style.display = "none";
+ }
+
+ // When the user clicks anywhere outside of the modal, close it
+ window.onclick = function(event) {
+     if (event.target == modal) {
+         modal.style.display = "none";
+     }
+ }
+ </script>
+<!-- END -->
 
 
-		 </div>
-		 </div>
 
 
 
-	 		  <!-- footer-bottom -->
-	 		<div class="footer-bottom">
-	 			 <div class="wrap">
-	 					 <div class="copy-right">
-	 						 <center><p>©2017 SHE'S THE FIRST |<a href="https://shesthefirst.org/terms-of-use"> TERMS OF USE </a> | <a href="https://shesthefirst.org/privacy-policy">PRIVACY POLICY</a></p>
-	 						 </center>
-	 					</div>
-	 	       <div class="clear"> </div>
-	 	    </div>
+
+
+
+
+<div id="bb1" class="hide">
+ <div id = "fancybutton5" class="fancybutton5"> want her cheat sheet to success?> </div>
+</div>
+
+
+
+
+
+     <div id="myModal2" class="modal2">
+
+
+       <div class="modal-content2"  style ="z-index:4 position: absolute;">
+         <span class="close1">&times;</span>
+         <p class="tips2">1. <span style="color:#099695;">You always have to think about your audience.</span> What do they need to hear, what do
+they want to hear, and what will surprise them to hear? If you can think about that, then
+you’re always going to be one step ahead of your listener. You’re reacting to them,
+you’re giving to them, but you’re also giving them something they weren’t expecting.
+ <br>
+ <br>
+    				2. <span style="color:#099695;">Consider your guest.</span> If you’re inviting someone into a conversation, they’re not a prop.
+They’re not a blank list of generic questions -- they’re a person. It’s very sacred to have
+a conversation with someone and have them share things about their life with you. So,
+make sure you’re honoring that by really having the conversation you want to have.
+<br>
+<br>
+    				3. <span style="color:#099695;">Don’t forget to enjoy it.</span> People can hear it in your voice if you’re enjoying a
+conversation. I know in my podcast, I curse and I laugh a lot. When I listen back, I
+actually love those moments because it feels like I’m peering into a real conversation
+versus a staged interview. People can feel that joy and share in it.
+ <br>
+ <br>
+    				</p>
+       </div>
+
+     </div>
+
+
+
+
+
+ <script>
+ // Get the modal
+ var modal2 = document.getElementById('myModal2');
+
+ // Get the button that opens the modal
+ var btn1 = document.getElementById("fancybutton5");
+
+ // Get the <span> element that closes the modal
+ var span1 = document.getElementsByClassName("close1")[0];
+
+ // When the user clicks the button, open the modal
+ btn1.onclick = function() {
+     modal2.style.display = "block";
+ }
+
+ // When the user clicks on <span> (x), close the modal
+ span1.onclick = function() {
+     modal2.style.display = "none";
+ }
+
+ // When the user clicks anywhere outside of the modal, close it
+ window.onclick = function(event) {
+     if (event.target == modal2) {
+         modal2.style.display = "none";
+     }
+ }
+ </script>
+
+
+
+
+
+
+
+<!--FOURTH SECTION-->
+
+	 	  <div class="middlemiddle-bg"  style ="z-index:2">
+		       <center><h1 class="readyforactiontitle">Ready for action? <br> I want to...</h1></center>
+		       <div class="wrap">
+		       		<div class = "buttonspace">
+                  		  <a href="http://action.shesthefirst.org/social_media " target="_blank"><div class="tweet"><center><p style="color: white;">TWEET ABOUT IT</p></center></div></a>
+		     		  <br>
+		     		  <br>
+		     		 <a href="http://action.shesthefirst.org/talk_to_family"target="_blank"><div class="talk"><center><p>TALK TO FAMILY AND FRIENDS</p></center></div></a>
+		     		 <br>
+		     		 <br>
+		     		  <a href="http://action.shesthefirst.org/host"target="_blank"><div class="host"><center><p>HOST EVENT</p></center></div></a>
+		     		  <br>
+		     		  <br>
+		     		  <a href="http://action.shesthefirst.org/activist_challenge"target="_blank"><div class="challenge"><center><p style="color: white;">ACTIVIST CHALLENGE: START A PODCAST/ RADIOSHOW</p></center></div><a/>
+		     		  <br>
+		     		  <br>
+
+		     		  <a href="http://action.shesthefirst.org/totb"target="_blank"><div class="think" style="background-color: #fde545;"><center><p>THINK OUTSIDE THE BOX</p></center></div></a>
+		     		 </div>
+		      </div>
+			  </div>
+
+
+
+
+
+						  <!-- footer-bottom -->
+						<div class="footer-bottom">
+							 <div class="wrap">
+									 <div class="copy-right">
+										 <center><p>©2017 SHE'S THE FIRST |<a href="https://shesthefirst.org/terms-of-use"> TERMS OF USE </a> | <a href="https://shesthefirst.org/privacy-policy">PRIVACY POLICY</a></p>
+										 </center>
+									</div>
+					       <div class="clear"> </div>
+					    </div>
+
 
 
 </body>
