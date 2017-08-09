@@ -6,4 +6,4 @@ well-vetted content (articles, podcasts, and videos) how-to guides from young an
 This month, we're focusing in on intersectional feminism. Sign up with your email and mobile number - we promise never to share them - and let's get started on creating a more equitable world for women and girls.
 
 # Visit and make some waves in you community ✨
-[Action Network](http://action.shesthefirst.org/)
+# [Action Network](http://action.shesthefirst.org/) #
