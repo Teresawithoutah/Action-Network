@@ -1880,10 +1880,9 @@ b{
 					</div>
           <br>
 		  <!--THIS MONTH'S TOPIC BANNER-->
-<!-- ADD CORRECT LINK -->
       <center>
-<a href="http://action.shesthefirst.org/violence_against_women"> <img src = "https://i.imgur.com/pvJMyP9.jpg"></a>
-</center?>
+     <a href=""> <img src = "https://i.imgur.com/DauBUM6.jpg"></a>
+     </center>
 
 
 
@@ -1891,13 +1890,12 @@ b{
 <div class="wrap">
   <div class="middlemiddle-cont">
 
+<!-- paragraph blurb-->
 <p>
-  Government structures have a lot of power of the narrative that we hear and experience.
-   Unfortunately, that power is not always used for good.
-   Around the world, people face severe consequences for speaking out against the government or voicing unpopular opinions.
-   Read on this month to learn how political oppression changes communities across the globe.
+  The media bombards women and girls everywhere with images that misrepresent them -- or exclude them entirely.
+  You can't be what you can't see, so we've got a serious problem. 
+  This month, we'll dive in to why it matters so much, and what you can do to change it.
 </p>
-
 </div>
 </div>
 </div>
@@ -1914,22 +1912,34 @@ b{
             <center> 	<h1 class ="pasttopics"> Past Topics </h1> </center>
             <br>
 					</div>
-			<!--NEXT MONTH'S TOPIC BANNER-->
-
-
-
-      <center>
-    <a href="http://action.shesthefirst.org/violence_against_women"> <img src = "http://i.imgur.com/osSlNfz.jpg"></a>
-  </center>
-
 
  <!-- SECOND SECTION -->
 
        <div class="middlemiddle-bg">
        <div class="wrap">
          <div class="middlemiddle-cont">
+           <!-- ADD CORRECT LINK -->
+                 <center>
+           <a href="http://action.shesthefirst.org/violence_against_women"> <img src = "https://i.imgur.com/pvJMyP9.jpg"></a>
+           </center>
+<br>
+           <p>
+             Government structures have a lot of power of the narrative that we hear and experience.
+              Unfortunately, that power is not always used for good.
+              Around the world, people face severe consequences for speaking out against the government or voicing unpopular opinions.
+              Read on this month to learn how political oppression changes communities across the globe.
+           </p>
+
+<br>
+<br>
+<br>
+
+           <center>
+         <a href="http://action.shesthefirst.org/violence_against_women"> <img src = "http://i.imgur.com/osSlNfz.jpg"></a>
+       </center>
 
 
+<br>
 
            <p>
              Violence against women is happening right now. According to the World Health Organization, one in three women has been abused physically or sexually in her lifetime, and one in five has been abused as a child. In the United States, October is Domestic Violence Awareness Month, but this is an issue that crosses all borders. Read on for the facts about this worldwide epidemic and tips for taking action against gender-based violence right in your own community.
@@ -1942,7 +1952,7 @@ b{
            <a href="http://action.shesthefirst.org/intersectional_feminism"> <img src = "http://i.imgur.com/SrCgDD9.jpg"></a>
 
            </center>
-
+<br>
            <p class="paragraph1">
              Most likely you’ve heard about feminism, but you may not have heard of intersectional feminism. Or maybe you’ve heard of it, but you don’t understand what it means or why it matters. We explain all of that, but first here is the general idea: intersectional feminism breaks through the barriers created by all identities with equal respect.
            </p>
