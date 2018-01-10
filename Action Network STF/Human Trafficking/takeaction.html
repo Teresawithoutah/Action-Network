@@ -871,7 +871,7 @@ header.smaller nav a {
 
 .subtitle{
 	font-family: 'Poppins', sans-serif;
-	font-size:  4vw;
+	font-size:  5.6vw;
 	font-weight: bolder;
 	color: black;
 }
@@ -1988,6 +1988,10 @@ header.smaller nav a {
 .previous{position:absolute;bottom:0;right:0;}
 .next {position:absolute;right:50%;top:50%;}
 
+img.yerp{
+    max-width:84%;
+    height:auto !important;
+}
 
    </style>
 
@@ -2010,15 +2014,36 @@ header.smaller nav a {
 		 	  <div class="middlemiddle-cont">
 		   <!-- TITLE   <center>	<h1 class="themetitle"> Catchy Title</h1></center> -->
 		      <p class="paragraph1">
-            Ready to take your knowledge to the next level? 
-            Here are a few activists working in their own communities and ways you can get involved in your own to make the world a better place for women and girls. 
-            We can’t wait to hear how you’re working to create change!
-
+            Congratulations! You’ve just learned important new concepts that affect girls and women all around the world.
+            Now time for the hard part, applying those concepts in your everyday life.
+            We are so proud of all the hard work you’ve put in so far, but don’t stop now.
+            We need your help!
 		      </p>
  			  </div>
 
 	   </div>
 	   </div>
+     <script>
+        $(document).ready(function(){
+         $("#btn1").click(function(){
+           $("#div1").toggle();
+           $("#div2").toggle();
+           $("#bb").toggle();
+           $("#bb1").toggle();
+         });
+        });
+     </script>
+
+     <script>
+        $(document).ready(function(){
+         $("#btn2").click(function(){
+           $("#div1").toggle();
+           $("#div2").toggle();
+           $("#bb").toggle();
+           $("#bb1").toggle();
+         });
+        });
+     </script>
 
  <!--THIRD SECTION -->
 	 	 <div class="top-bg" style ="z-index:1">
@@ -2030,23 +2055,22 @@ header.smaller nav a {
 
 
 		    <div class="wrap" id="div1">
-
+          <br>
 		  <!--PHOTO OF ACTIVIST-->
 		  	    <center>
-		        <img  src = "https://imgur.com/a/0zY2K" height="800px">
+		        <img src="http://i.imgur.com/JimS8yl.jpg" class="yerp">
 				</center>
 				<br>
-      <center>  <h1 class="subtitle"> Mary Quant</h1> </center>
-          <br>
+      <center>  <h1 class="subtitle"> Sharon Awino </h1> </center>
+  <br>
 
 				<p class="paragraph1">
-This month’s activist takes intersectional heroism to a new level. 
-An Indian nun, Sister Vanaja Jasphine, has made it her mission to rescue children from Cameroon who are being trafficked in the Middle East. 
-She is doing amazing work to advocate for victims of human trafficking and was even recognized as a 2017 Trafficking in Persons Report Hero by the U.S. State Department. 
-Her journey started by simply acknowledging the problem of trafficking as a human rights violation.
-Maybe we can’t all be as inspirational as this Sister, but we can take the first step by being aware of modern slavery.
-For now, be sure to learn more about this game-changing nun <a href="https://www.npr.org/2017/07/01/535131172/vanaja-jasphine-honored-for-her-fight-against-human-trafficking" target="_blank">here</a>. 
-        </p>
+            When asked how she learned to create such a successful financial program as a 16-year-old, Sharon smiled and replied, “The problem lies at your feet, and we all have the potential to solve it. All you have to do is unleash it.” Sharon has worked hard to help other girls in her community unleash their potential through a small business. A bright-eyed STF Scholar studying in Nairobi, Kenya, she has certainly been able to unleash her own potential. Inspired by a mentor, she decided to use her practical skill of making soap to help another girl pay for her school fees. But for Sharon, helping one girl wasn’t enough. When she hit the limits of what she could raise from her soap business, she found a rotary club in her community to help her raise even more money for girls. Her entrepreneurship and fundraising aren’t even the most impressive part of her advocacy project: Sharon has gone to seven different schools where she has mentored entire classes of up to 60 girls. Sharon believes that all girls have the obligation to help one another, and she is a living example that one girl really can change the world.
+
+
+
+                 </p>
+
 
 
 
@@ -2058,13 +2082,60 @@ For now, be sure to learn more about this game-changing nun <a href="https://www
 
 
 
-<a href="https://www.bustle.com/articles/191181-how-women-have-used-fashion-as-a-feminist-tool-throughout-history" target="_blank">
-        <!-- GET MONICA TIPS BUTTON -->
-        <div id ="bb" >
-         <div id = "fancybutton" class="fancybutton"> link to article >
-       </div>
-        </div>
-</a>
+
+<!-- GET MONICA TIPS BUTTON -->
+<div id ="bb" >
+ <div id = "fancybutton" class="fancybutton"> want her cheat sheet to success?
+ > </div>
+</div>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content"  style ="z-index:4 position: absolute;">
+    <span class="close">&times;</span>
+    <p class="tips">1. There are so many people willing to help, don’t be afraid to ask.  <br>
+       2. You should always aim high. Don’t let what other people say bring you down. <br>
+       3. Solve the problem that’s in front of you: Figure out what affects your community the most.  <br>
+       4. Do not be brought down by anything in this world. The power to create change is all around us.  </p>
+  </div>
+
+</div>
+
+
+<!-- POP UP BUTTON SCRIPT -->
+
+
+ <script>
+ // Get the modal
+ var modal = document.getElementById('myModal');
+
+ // Get the button that opens the modal
+ var btn = document.getElementById("fancybutton");
+
+ // Get the <span> element that closes the modal
+ var span = document.getElementsByClassName("close")[0];
+
+ // When the user clicks the button, open the modal
+ btn.onclick = function() {
+     modal.style.display = "block";
+ }
+
+ // When the user clicks on <span> (x), close the modal
+ span.onclick = function() {
+     modal.style.display = "none";
+ }
+
+ // When the user clicks anywhere outside of the modal, close it
+ window.onclick = function(event) {
+     if (event.target == modal) {
+         modal.style.display = "none";
+     }
+ }
+ </script>
+<!-- END -->
 
 
 
@@ -2075,6 +2146,36 @@ For now, be sure to learn more about this game-changing nun <a href="https://www
 
 
 
+
+
+
+ <script>
+ // Get the modal
+ var modal2 = document.getElementById('myModal2');
+
+ // Get the button that opens the modal
+ var btn1 = document.getElementById("fancybutton5");
+
+ // Get the <span> element that closes the modal
+ var span1 = document.getElementsByClassName("close1")[0];
+
+ // When the user clicks the button, open the modal
+ btn1.onclick = function() {
+     modal2.style.display = "block";
+ }
+
+ // When the user clicks on <span> (x), close the modal
+ span1.onclick = function() {
+     modal2.style.display = "none";
+ }
+
+ // When the user clicks anywhere outside of the modal, close it
+ window.onclick = function(event) {
+     if (event.target == modal2) {
+         modal2.style.display = "none";
+     }
+ }
+ </script>
 
 
 
@@ -2097,7 +2198,8 @@ For now, be sure to learn more about this game-changing nun <a href="https://www
 		     		  <a href="http://action.shesthefirst.org/host"target="_blank"><div class="host"><center><p>HOST EVENT</p></center></div></a>
 		     		  <br>
 		     		  <br>
-		     		  <a href="http://action.shesthefirst.org/activist_challenge"target="_blank"><div class="challenge"><center><p style="color: white;">ACTIVIST CHALLENGE </p></center></div><a/>
+		     		  <a href="http://action.shesthefirst.org/activist_challenge"target="_blank"><div class="challenge"><center><p style="color: white;">ACTIVIST CHALLENGE: DIY Fundraiser
+</p></center></div><a/>
 		     		  <br>
 		     		  <br>
 
