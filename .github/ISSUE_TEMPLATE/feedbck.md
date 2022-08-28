@@ -16,6 +16,12 @@ assignees: ''
 
 **Cons**:
 
+## 🎟 Food/Swag 
+**Was catering provided?**
+
+**Was swag provided?**
+
+
 ## 🛠  Issues and Changes 
 
 **Were there any issues the day of?**
