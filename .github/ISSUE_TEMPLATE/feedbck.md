@@ -26,3 +26,12 @@ assignees: ''
 **Attach any pictures here or include an external link**
 
 ## 📝  Overall notes
+
+## 🎟 Food/Swag 
+**Was catering provided?**
+- [ ] Yes
+- [x] No 
+
+**Was swag provided?**
+- [x] Yes
+- [ ] No
